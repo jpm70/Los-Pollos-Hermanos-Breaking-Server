@@ -90,8 +90,19 @@ footer{
   font-size:.9rem;
 }
 
+/* Contenedor */
 .imagen-final {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* Imagen dentro del contenedor */
+.imagen-final img {
+  max-width: 100%;  /* No se salga del contenedor */
+  height: auto;     /* Mantiene proporción */
+  display: block;   /* Permite centrar con margin auto */
+  margin: 0 auto;   /* Centra la imagen */
+}
+
+
 
