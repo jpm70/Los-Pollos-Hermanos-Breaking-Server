@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Pollos Hermanos Breaking Server — La máquina</title>
+  <!-- Hoja de estilos común -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Imagen de cabecera específica para esta página -->
+  <style>
+    .hero {
+      background-image: url("archivos/maquina.png");
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner" aria-label="Los Pollos Hermanos"></header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="instrucciones.html">📜 Instrucciones</a></li>
+      <li><a href="guia.html">🛠 Guía de Resolución</a></li>
+      <li><a href="personajes.html">👥 Personajes</a></li>
+      <li><a href="maquina.html" aria-current="page">💻 La máquina</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>🖥 Resumen técnico de la máquina</h1>
+
+    <ul>
+      <li><strong>Sistema base:</strong> Ubuntu Server 14.04.6 LTS — distribución Linux orientada a servidores, versión LTS ya fuera de soporte oficial.</li>
+      <li><strong>Virtualización:</strong> Diseñada para ejecutarse en VirtualBox bajo arquitectura BIOS tradicional (EFI desactivado para compatibilidad). Exportada como Open Virtualization Format 1.0. Importable desde ficheros OVF/OVA.</li>
+      <li><strong>Servicios principales:</strong>
+        <ul>
+          <li>Apache HTTP Server para servir contenido web.</li>
+          <li>Soporte PHP habilitado para ejecución de aplicaciones dinámicas.</li>
+          <li>MySQL/MariaDB como gestor de base de datos (parte del stack LAMP).</li>
+          <li>Integración de scripts y páginas en HTML/PHP en la carpeta pública de Apache.</li>
+        </ul>
+      </li>
+      <li><strong>Estructura de archivos web:</strong> Archivos públicos accesibles vía navegador y documentos HTML/PHP que forman parte de la narrativa y retos.</li>
+      <li><strong>Red y acceso:</strong> Accesible por red local a través de dirección IP asignada. Configuración de red compatible con adaptadores NAT o puente para VirtualBox. Se han quitado todas las direcciones MAC del adaptador de red para evitar conflictos; al importar, basta con seleccionar tu adaptador de red en la configuración de VirtualBox.</li>
+      <li><strong>Compatibilidad software:</strong> Orientada a entornos de entrenamiento tipo CTF. Versiones y paquetes ajustados para simular un escenario realista.</li>
+      <li><strong>Seguridad:</strong> Sistema deliberadamente desactualizado para fines didácticos. Presencia de componentes y configuraciones vulnerables (sin detallar).</li>
+    </ul>
+
+    <h2>🐔 Descargar la máquina:</h2>
+    <p>Opciones de descarga:</p>
+    <ol>
+      <li><a href="https://www.vulnhub.com/" target="_blank">VulnHub</a></li>
+      <li><a href="https://1drv.ms/u/c/368FFA47C04DD5F6/EeM8nVe8OllKodaA9Sn53e4BznD0Xg5tFjCtyxdovaQ-Kg?e=uQFXtO" target="_blank">OneDrive</a></li>
+      <li><a href="https://drive.google.com/file/d/1p4HjUgpqUYsKvEnZzDxcrzId2VknWdv_/view?usp=sharing" target="_blank">GoogleDrive</a></li>
+    </ol>
+  </main>
+
+<div class="imagen-final">
+  <div>
+    <img src="archivos/pista.png" alt="Pista para el reto" />
+  </div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!4v1756368089127!6m8!1m7!1s1Bu-GP3zd84Xl1jD1WagpQ!2m2!1d34.98892887809681!2d-106.6151187423924!3f42.364974950704706!4f-0.7551407403177848!5f0.7820865974627469" 
+	width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 	referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+  <div>
+    <img src="archivos/maquina2.png" alt="Imagen final de La máquina" />
+  </div>
+</div>
+
+  <footer>
+    <p>© 2025 Los Pollos Hermanos Breaking Server</p>
+  </footer>
+</body>
+</html>

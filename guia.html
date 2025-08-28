@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Pollos Hermanos Breaking Server — Guía de Resolución</title>
+  <!-- Hoja de estilos común -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Imagen de cabecera específica para esta página -->
+  <style>
+    .hero {
+      background-image: url("archivos/guia.png");
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner" aria-label="Los Pollos Hermanos"></header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="instrucciones.html">📜 Instrucciones</a></li>
+      <li><a href="guia.html" aria-current="page">🛠 Guía de Resolución</a></li>
+      <li><a href="personajes.html">👥 Personajes</a></li>
+      <li><a href="maquina.html">💻 La máquina</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>🕵️‍♂️ Guía de Orden de Resolución — CTF: Los Pollos Hermanos Breaking Server</h1>
+    <p><strong>Versión de referencia para jugadores</strong><br>
+    <strong>Autor:</strong> José Pérez (<a href="https://www.unfantasmaenelsistema.com">www.unfantasmaenelsistema.com</a>)<br>
+    <strong>Modo de juego:</strong> Máquina tipo CTF con 25 retos<br>
+    <strong>Requisitos previos:</strong> Conexión desde Kali Linux u otro entorno ofensivo</p>
+
+    <h2>🔐 Descripción General</h2>
+    <p>Este documento organiza los 25 retos (10 moscas y 15 banderas) en un orden recomendado para el jugador. El objetivo es guiarte por una progresión lógica de dificultad, narrativa y aprendizaje técnico. El CTF está inspirado en el universo de <em>Breaking Bad</em>, con personajes, contraseñas y pruebas interconectadas.</p>
+
+    <h2>🐝 Parte 1: Las Moscas</h2>
+    <p><em>(Criptografía — Steganografía — Forense — WEB — OSINT — Red — Misc)</em></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Nº</th>
+          <th>Nombre de Mosca</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Mosca 1</td><td>Criptog. + Steganografía</td></tr>
+        <tr><td>2</td><td>Mosca 2</td><td>Criptografía + Forense</td></tr>
+        <tr><td>3</td><td>Mosca 3</td><td>Criptografía + Misc</td></tr>
+        <tr><td>4</td><td>Mosca 4</td><td>Criptografía + WEB</td></tr>
+        <tr><td>5</td><td>Mosca 5</td><td>Forense</td></tr>
+        <tr><td>6</td><td>Mosca 6</td><td>Criptografía + Misc</td></tr>
+        <tr><td>7</td><td>Mosca 7</td><td>Criptografía + Misc</td></tr>
+        <tr><td>8</td><td>Mosca 8</td><td>Criptografía + OSINT</td></tr>
+        <tr><td>9</td><td>Mosca 9</td><td>Criptog. + Steganografía</td></tr>
+        <tr><td>10</td><td>Mosca 10</td><td>Criptografía + Red</td></tr>
+      </tbody>
+    </table>
+
+    <h2>⚙️ Parte 2: Las Banderas</h2>
+    <p><em>(Sistemas — Red — Forense)</em></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Nº</th>
+          <th>Bandera</th>
+          <th>Categoría</th>
+          <th>Explotación/Vulnerabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>11</td><td>Bandera 1</td><td>Privilegios</td><td>sudoers</td></tr>
+        <tr><td>12</td><td>Bandera 2</td><td>Red</td><td>FTP anónimo</td></tr>
+        <tr><td>13</td><td>Bandera 3</td><td>Privilegios</td><td>SUID</td></tr>
+        <tr><td>14</td><td>Bandera 4</td><td>Forense</td><td>Archivos sin ext.</td></tr>
+        <tr><td>15</td><td>Bandera 5</td><td>Red / Forense</td><td>Análisis en Wireshark</td></tr>
+        <tr><td>16</td><td>Bandera 6</td><td>Red / Exploit</td><td>Samba CVE-2017</td></tr>
+        <tr><td>17</td><td>Bandera 7</td><td>Red / Brute-force</td><td>SSH débil</td></tr>
+        <tr><td>18</td><td>Bandera 8</td><td>Red / Forense</td><td>Certificado oculto</td></tr>
+        <tr><td>19</td><td>Bandera 9</td><td>Red / Recon</td><td>Netcat</td></tr>
+        <tr><td>20</td><td>Bandera 10</td><td>Web Exploitation</td><td>LFI PHP</td></tr>
+        <tr><td>21</td><td>Bandera 11</td><td>Criptografía / Puzzle</td><td>Guion PDF</td></tr>
+        <tr><td>22</td><td>Bandera 12</td><td>Warm-up</td><td>Permisos</td></tr>
+        <tr><td>23</td><td>Bandera 13</td><td>Forense / Logs</td><td>Logs ocultos</td></tr>
+        <tr><td>24</td><td>Bandera 14</td><td>Forense / Memoria</td><td>Volcado memoria</td></tr>
+        <tr><td>25</td><td>Bandera 15</td><td>Pwn / Exploit binario</td><td>Buffer Overflow</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🧠 Recomendaciones para los Jugadores</h2>
+    <ul>
+      <li>Usa Kali Linux: las herramientas necesarias ya vienen preinstaladas.</li>
+      <li>Comienza desde la web: inspecciona el código fuente, analiza imágenes, descifra.</li>
+      <li>Escanea puertos de forma regular: muchos retos están ocultos.</li>
+      <li>No subestimes los logs ni archivos sin extensión.</li>
+      <li>Trabaja con binarios en entornos de 32 bits cuando sea posible.</li>
+      <li>Lee la narrativa: muchas pistas están ligadas a los personajes.</li>
+    </ul>
+
+    <h2>📎 Observaciones del Autor</h2>
+    <p>Los retos permiten resolución libre, pero este orden favorece el flujo y el aprendizaje. Hay desafíos diseñados con un toque cinematográfico y técnico que evocan la dualidad Walter/Gus.</p>
+  </main>
+<div class="imagen-final">
+  <img src="archivos/guia2.png" alt="Imagen final de Guía de resolución" />
+</div>
+  <footer>
+    <p>© 2025 Los Pollos Hermanos Breaking Server</p>
+  </footer>
+</body>
+</html>
+
+
